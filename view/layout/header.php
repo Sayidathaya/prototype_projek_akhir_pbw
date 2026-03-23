@@ -1,0 +1,77 @@
+<?php
+// ============================================================
+// FILE: view/layout/header.php
+// Navbar & Head HTML - Kampung Ketupat Warna Warni
+// ============================================================
+$halaman_aktif = $halaman_aktif ?? '';
+?>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><?= $judul_halaman ?? 'Kampung Ketupat Warna Warni Samarinda' ?></title>
+  <meta name="description" content="Website informasi dan promosi wisata Kampung Ketupat Warna Warni Samarinda, Kalimantan Timur." />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/style.css" />
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg navbar-kk fixed-top" id="mainNavbar">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="<?= BASE_URL ?>">
+      <span class="logo-icon">🏡</span>
+      <span class="logo-text">Kampung <span class="text-accent">Ketupat</span></span>
+    </a>
+
+    <!-- Hamburger -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+      aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item">
+          <a class="nav-link <?= $halaman_aktif === 'beranda' ? 'active' : '' ?>" href="<?= BASE_URL ?>">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?= $halaman_aktif === 'wisata' ? 'active' : '' ?>" href="<?= BASE_URL ?>/wisata">Detail Wisata</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?= $halaman_aktif === 'galeri' ? 'active' : '' ?>" href="<?= BASE_URL ?>/galeri">Galeri</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?= $halaman_aktif === 'event' ? 'active' : '' ?>" href="<?= BASE_URL ?>/event">Event</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?= $halaman_aktif === 'umkm' ? 'active' : '' ?>" href="<?= BASE_URL ?>/umkm">UMKM</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?= $halaman_aktif === 'lokasi' ? 'active' : '' ?>" href="<?= BASE_URL ?>/lokasi">Lokasi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?= $halaman_aktif === 'kontak' ? 'active' : '' ?>" href="<?= BASE_URL ?>/kontak">Kontak</a>
+        </li>
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-kk-outline btn-sm" href="<?= BASE_URL ?>/kritik-saran">
+            <i class="bi bi-chat-heart me-1"></i>Kritik & Saran
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- ===== END NAVBAR ===== -->
