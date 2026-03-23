@@ -171,6 +171,7 @@ define('DB_PASS', '');      // default Laragon: kosong
 http://localhost/kampung-ketupat-projek-akhir
 ```
 > ✅ Database, tabel, dan data awal **otomatis dibuat** — tidak perlu import SQL manual.
+> Jika Database tidak ter import, silahkan import manual, ada di folder database.
 
 ---
 
