@@ -1,4 +1,4 @@
-# 🏡 Kampung Ketupat Warna Warni Samarinda
+# 🏡 Kampung Ketupat Warna Warni Samarinda (Prototype)
 ### Website Informasi & Promosi Wisata UMKM dan Pariwisata
 
 > **Proyek Akhir — Mata Kuliah Pemrograman Berbasis Web**
